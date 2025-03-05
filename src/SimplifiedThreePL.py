@@ -153,3 +153,8 @@ class SimplifiedThreePL:
         if not self._is_fitted:
             raise ValueError("Model is not fitted yet.")
         return self._base_rate
+    
+    def get_logit_base_rate(self):
+        if not self._is_fitted:
+            raise ValueError("Model is not fitted yet.")
+        return self._logit_base_rate
